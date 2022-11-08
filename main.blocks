@@ -1,0 +1,52 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="AWHw1w7^aJ|vR{xem0,I">Duck</variable><variable id=")NNLh9{u-@wD_pwE@ZJ0">mySprite</variable><variable id="2PR0yz]~$Wsv0=|@dn;*">projectile</variable><variable id="A*Qsl!rJr`vV_,[3Pm;o">Asteroid</variable><variable id="[(AR`pn91R8P1}[-oMFc">projectile2</variable><variable type="KIND_SpriteKind" id="{`H:I.f}7?q04|3_2bA-">Player</variable><variable type="KIND_SpriteKind" id="|g5cwRJ}=/Z-x7r5_/c)">Projectile</variable><variable type="KIND_SpriteKind" id="GT!L`a9aq+ARx|n)hK.6">Food</variable><variable type="KIND_SpriteKind" id="TIz3LW4)Oo*?Kf~n.-R*">Enemy</variable><variable type="KIND_SpriteKind" id="MC=`k-qr}~VAC2S%sd_P">Human</variable><variable type="KIND_SpriteKind" id="U;oE[p=Sfdi?2X^{Qs1;">Human2</variable><variable type="KIND_SpriteKind" id="S1?.D6|2f^o((byl[al:">Cow</variable><variable type="KIND_SpriteKind" id="Oef|kh@IoEBZnea9BMe)">Duck</variable></variables><block type="function_definition" id="%gSTe!%*7$]A9*ZHiZ!^" x="290" y="-270"><mutation name="CreateAsteroids" functionid="]LQjB21e=$(^$*A3dOWm"></mutation><field name="function_name">CreateAsteroids</field><statement name="STACK"><block type="variables_set" id=".fr`2^@ZdAexlt[}YQ{3"><field name="VAR" id="A*Qsl!rJr`vV_,[3Pm;o">Asteroid</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromside" id="t{ZBo-L+Mepatz#o_i9#"><value name="img"><shadow type="screen_image_picker" id="zI;=RoQ9^Ncbuj;=G%0{"><field name="img">img`
+. . . . . . . . c c c c . . . . 
+. . . . c c c c c c c c c . . . 
+. . . c f c c a a a a c a c . . 
+. . c c f f f f a a a c a a c . 
+. . c c a f f c a a f f f a a c 
+. . c c a a a a b c f f f a a c 
+. c c c c a c c b a f c a a c c 
+c a f f c c c a b b 6 b b b c c 
+c a f f f f c c c 6 b b b a a c 
+c a a c f f c a 6 6 b b b a a c 
+c c b a a a a b 6 b b a b b a . 
+. c c b b b b b b b a c c b a . 
+. . c c c b c c c b a a b c . . 
+. . . . c b a c c b b b c . . . 
+. . . . c b b a a 6 b c . . . . 
+. . . . . . b 6 6 c c . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"zI;=RoQ9^Ncbuj;=G%0{"}}</data></shadow></value><value name="vx"><shadow type="spriteSpeedPicker" id="r1`QQnYq%Hn|vteWh6qv"><field name="speed">-10</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="2x%{UjPW,[,N]wgbf,?d"><field name="speed">10</field></shadow></value></block></value><next><block type="spritesaytext" id="Waq?BThv(:gw.Qf^2f}%"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="this"><block type="variables_get" id="*lf9=/T3/.QK0?6KD^;g"><field name="VAR" id="A*Qsl!rJr`vV_,[3Pm;o">Asteroid</field></block></value><value name="text"><shadow type="text" id="A@teODE#-B:HYi{7rQ__"><field name="TEXT">Crash</field></shadow></value><value name="timeOnScreen"><shadow type="timePicker" id="nTOzvsp-bl)?ufpWyTh*"><field name="ms">500</field></shadow></value><value name="animated"><shadow type="logic_boolean" id="+T=QR=_Kpm*YAqL+]/vC"><field name="BOOL">FALSE</field></shadow></value></block></next></block></statement></block><block type="pxt-on-start" id="7~n)!2=]__P?Dm[6~rHG" x="0" y="0"><statement name="HANDLER"><block type="function_call" id="HO}?T65q58AwJ~[=fp$V"><mutation name="CreateHuman" functionid="a/]pF/Vvz)xhP4Da]ORZ"></mutation><next><block type="function_call" id="qprQF|)WeY^Paym~%Z#,"><mutation name="CreateDuck" functionid="/NKIKtz*{W+iR1TyWUVN"></mutation><next><block type="function_call" id="-cz5*Ezf5zP7Oh7w/Js5"><mutation name="CreateAsteroids" functionid="]LQjB21e=$(^$*A3dOWm"></mutation></block></next></block></next></block></statement></block><block type="function_definition" id="%8#tLfj~#pIyjfOUKI+2" x="530" y="10"><mutation name="CreateDuck" functionid="/NKIKtz*{W+iR1TyWUVN"></mutation><field name="function_name">CreateDuck</field><statement name="STACK"><block type="variables_set" id="4h+?:sNKe,t@@/z?XAL6"><field name="VAR" id="AWHw1w7^aJ|vR{xem0,I">Duck</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="g~r+{q35)I2E{MHYvmRR"><value name="img"><shadow type="screen_image_picker" id="x*D!;{mH$fO2|DL$=qFg"><field name="img">img`
+. . . . . . . . . . b 5 b . . . 
+. . . . . . . . . b 5 b . . . . 
+. . . . . . . . . b c . . . . . 
+. . . . . . b b b b b b . . . . 
+. . . . . b b 5 5 5 5 5 b . . . 
+. . . . b b 5 d 1 f 5 5 d f . . 
+. . . . b 5 5 1 f f 5 d 4 c . . 
+. . . . b 5 5 d f b d d 4 4 . . 
+b d d d b b d 5 5 5 4 4 4 4 4 b 
+b b d 5 5 5 b 5 5 4 4 4 4 4 b . 
+b d c 5 5 5 5 d 5 5 5 5 5 b . . 
+c d d c d 5 5 b 5 5 5 5 5 5 b . 
+c b d d c c b 5 5 5 5 5 5 5 b . 
+. c d d d d d d 5 5 5 5 5 d b . 
+. . c b d d d d d 5 5 5 b b . . 
+. . . c c c c c c c c b b . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"x*D!;{mH$fO2|DL$=qFg"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="I{0P{~PK9N#8th7B16yZ"><field name="MEMBER">Duck</field></shadow></value></block></value><next><block type="spritesetpos" id="?a7B#V1%|V6lc3dR9^Ws"><value name="sprite"><block type="variables_get" id="DGWP8f9}3SnCUO=}Z2C*"><field name="VAR" id="AWHw1w7^aJ|vR{xem0,I">Duck</field></block></value><value name="x"><shadow type="positionPicker" id="m4f11F6s!qkiZ5b`z7r{"><field name="index">50</field></shadow></value><value name="y"><shadow type="positionPicker" id=".fl0c*XqyN__];qJ#fac"><field name="index">80</field></shadow></value><next><block type="spritesaytext" id="qJZJ$0`=?V-yr6|WFooc"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="this"><block type="variables_get" id="J]$igoVq~vJK?s3@CO)i"><field name="VAR" id="AWHw1w7^aJ|vR{xem0,I">Duck</field></block></value><value name="text"><shadow type="text" id="|q]mxdyE{w@gT53FKG%?"><field name="TEXT">hi</field></shadow></value><value name="timeOnScreen"><shadow type="timePicker" id="|,wMeOvJyT!R}/ANuRET"><field name="ms">500</field></shadow></value><value name="animated"><shadow type="logic_boolean" id="1W4s@Xk/%W+rg):N`iIt"><field name="BOOL">FALSE</field></shadow></value></block></next></block></next></block></statement></block><block type="function_definition" id="Pm:..l1N4-(p]DaELX[*" x="10" y="270"><mutation name="CreateHuman" functionid="a/]pF/Vvz)xhP4Da]ORZ"></mutation><field name="function_name">CreateHuman</field><statement name="STACK"><block type="variables_set" id="*,`|.2:6ch-m`AaGWE-?"><field name="VAR" id="AWHw1w7^aJ|vR{xem0,I">Duck</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="k~HbN_7NKdmFP43I}Oiq"><value name="img"><shadow type="screen_image_picker" id="MM5XyUAg##H#uWe`J^v;"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . f f f f . . . . . . 
+. . . . f f f 2 2 f f f . . . . 
+. . . f f f 2 2 2 2 f f f . . . 
+. . f f f e e e e e e f f f . . 
+. . f e e 2 2 2 2 2 2 e f f . . 
+. f f e 2 f f f f f f 2 e f f . 
+. f f f f f e e e e f f f f f . 
+. . f e f b f 4 4 f b f e f . . 
+. . f e 4 1 f d d f 1 4 e f . . 
+. . e f e 4 d d d d 4 e f . . . 
+. . e 4 d d e 2 2 2 2 f e f . . 
+. . . e d d e 2 2 2 2 f 4 e . . 
+. . . . e e f 5 5 4 4 f . . . . 
+. . . . . f f f f f f f . . . . 
+. . . . . . . . . f f f . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"MM5XyUAg##H#uWe`J^v;"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="6MCgu)/VzH)7w#I|A3Xe"><field name="MEMBER">Human</field></shadow></value></block></value><next><block type="spritesetpos" id="l,xIt11S#wTLSeM~;48`"><value name="sprite"><block type="variables_get" id="JxQK22jXQha4XCQtTgM?"><field name="VAR" id="AWHw1w7^aJ|vR{xem0,I">Duck</field></block></value><value name="x"><shadow type="positionPicker" id="9o[+T#v$Win[NT0a_inl"><field name="index">20</field></shadow></value><value name="y"><shadow type="positionPicker" id="8!M2R%qhcs3(GO7-;a@i"><field name="index">30</field></shadow></value><next><block type="spritesaytext" id="/J{b;/qf8pSMuO^_ovuH"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="this"><block type="variables_get" id="R)eay[b-D3ynoc$QECe5"><field name="VAR" id="AWHw1w7^aJ|vR{xem0,I">Duck</field></block></value><value name="text"><shadow type="text" id="o$1UiKoPnxT:3Q;eKoD6"><field name="TEXT">Hello</field></shadow></value><value name="timeOnScreen"><shadow type="timePicker" id="3:~u}CQfD6PmaArqouEe"><field name="ms">500</field></shadow></value><value name="animated"><shadow type="logic_boolean" id="6c6sw-;f$;N{ijEUQ(:4"><field name="BOOL">FALSE</field></shadow></value></block></next></block></next></block></statement></block></xml>
